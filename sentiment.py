@@ -31,6 +31,8 @@ def generic_gradient_checker(x, y, theta, L, objective_func, gradient_func, epsi
     grad_diff_norm = 0
     tolsq = tolerance*tolerance
 
+    print true_grad
+
     for dim in theta:
         theta_plus[dim] += eps
         theta_minus[dim] -= eps
